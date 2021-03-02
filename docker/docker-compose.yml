@@ -7,4 +7,4 @@ services:
       - 8989:8989
     restart: always
     volumes:
-      - $PWD/ssr.config.json:/app/config.json:ro
+      - $PWD/config.json:/app/config.json:ro
