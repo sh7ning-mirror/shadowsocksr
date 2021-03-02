@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  ssr:
+    image: winterssy/shadowsocksr:latest
+    container_name: ssr
+    ports:
+      - 8989:8989
+    restart: always
+    volumes:
+      - $PWD/ssr.config.json:/app/config.json:ro
